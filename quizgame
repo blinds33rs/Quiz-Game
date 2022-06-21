@@ -1,0 +1,107 @@
+playing = ""
+
+#QuestionFunction
+def questions_answers():
+  i = 0
+  score = 0
+  
+  answer = input("What year was the very first model of the iPhone released?\n")
+  if answer != "2007":
+      print("\nIncorrect\n")
+  else: 
+      print("\nCorrect\n")
+      i += 1
+      score += 1
+  
+    
+  answer = input("What’s the shortcut for the “copy” function on most computers?\n")
+  if answer != "Ctrl+c":
+      print("\nIncorrect\n")
+  else: 
+      print("\nCorrect\n")
+      i += 1
+      score += 1
+
+    
+  answer = input("What is often seen as the smallest unit of memory?\n")
+  
+  if answer != "Kilobyte":
+      print("\nIncorrect\n")
+  else: 
+      print("\nCorrect\n")
+      i += 1
+      score += 1
+
+  answer = input("Is Java a type of OS?\n")
+  if answer != "No":
+      print("\nIncorrect")
+  else: 
+      print("\nCorrect\n")
+      i += 1
+      score + 1
+  answer = input("Who is often called the father of the computer?\n")
+  if answer != "Charles Babbage":
+      print("\nIncorrect\n")
+  else: 
+      print("\nCorrect\n")
+      i += 1
+      score += 1
+    
+  answer = input("What does “HTTP” stand for?\n")
+  if answer != "HyperText Transfer Protocol":
+      print("\nIncorrect\n")
+  else: 
+      print("\nCorrect\n")
+      i += 1
+      score += 1
+    
+  answer = input("What is the name of the man who launched eBay back in 1995?\n")
+  if answer != "Pierre Omidyar":
+      print("\nIncorrect\n")
+  else: 
+      print("\nCorrect\n")
+      i += 1
+      score += 1
+    
+  answer = input("Which email service is owned by Microsoft?\n")
+  if answer != "Hotmail":
+      print("\nIncorrect\n")
+  else: 
+      print("\nCorrect\n")
+      i += 1
+      score += 1
+    
+  answer = input("Google Chrome, Safari, Firefox, and Explorer are different types of what?\n")
+  if answer != "Browsers":
+      print("\nIncorrect\n")
+  else: 
+      print("\nCorrect\n")
+      i += 1
+      score += 1
+    
+  answer = input(" What was Twitter’s original name?\n")
+  if answer != "twttr":
+      print("\nIncorrect\n")
+  else: 
+      print("\nCorrect\n")
+      i += 1
+      score += 1
+
+  return score
+    
+ 
+#main block
+
+print("Welcome To Quiz Game!")
+
+playing = input("Would you like to play? ")
+
+if playing != "Yes":
+  print("You Have Chosen...Poorly")
+  quit()
+
+print("Let's Play! \n")
+
+score = questions_answers()
+
+print ("Congratualions! Your Score is " + str(score) + "/10")
